@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Breaking Bad Name / Facebook Cover Generator</title>
+  
+  <link rel="stylesheet" href="css/foundation.min.css">
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/underscore.js"></script>
+  <script type="text/javascript" src="js/underscore.string.js"></script>
+  <script type="text/javascript"> _.mixin(_.str.exports()) </script>
+  <script src="js/modernizr.js"></script>
+  <script src="js/foundation.min.js"></script>
+
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <style type="text/css">
+     .chemical_color {
+       color: #3E6941;
+     }
+
+     #match_list {
+       font-size: 36px;
+       list-style: none;
+     }
+
+     body {
+      padding-top: 30px;
+      padding-bottom: 60px;
+     }
+  </style>
+
+</head>
+<body>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <h2>Breaking Bad Name / Facebook Cover Generator</h2>
+      <hr />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <!-- Grid Example -->
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="panel">
+            <input type="text" id="name" name="name" placeholder="Enter your name then press Enter" />
+          </div>
+        </div>
+      </div>
+      <div class="row" id="results" style="display: none">
+        <div class="large-12 columns">
+          <div class="panel">
+            <div id="matches">
+              <ul id="match_list">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h7><span id="first_tip" style="display: none;">Tips: 1) Mouse over a chemical symbol to see its name or click on it to generate an image below.</span> <span id="second_tip" style="display: none;"><br/>2) Right-click on the image below to save it (so you can make it your Facebook cover).</span></h7>
+      <br/><br/>
+
+      <canvas id="name_canvas" width="851" height="315"
+        style="border:1px solid #000000; display: none;">
+      </canvas>
+
+      <br/>
+      <a href="#" target="_blank" id="chemical_tip"></a>
+      <br/>
+      <div class="row">
+        <div class="large-4 large-offset-8 columns" style="text-align: right;">
+          <span style="font-size: 12px; color: #ccc;">by Christopher Butcher</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
